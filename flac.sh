@@ -5,12 +5,24 @@ parallel ffmpeg -i {} -qscale:a 0 {.}.mp3 ::: ./*.flac
 
 mkdir flac
 mv *.flac ./flac
+
 mkdir mp3
 mv *.mp3 ./mp3
+mv *.m3u ./mp3
+
+# move meta files to info folder
 mkdir info
 mv *.jpg ./info
+mv *.pnf ./info
 mv *.png ./info
-rm *.txt
-rm *.nfo
+mv *.log ./info
 
+# delete unwanted stuff
+rm *.cue
+rm *.url
+rm *.nfo
+rm *.txt
+rm *.html
+
+# add flac folder to zip file
 7z a flac.7z flac\
