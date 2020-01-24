@@ -1,11 +1,13 @@
 #!/bin/bash
 #bash script to convert flac to mp3 using ffmpeg and "parallel"
 
-parallel ffmpeg -i {} -qscale:a 0 {.}.mp3 ::: ./*.flac
+parallel ffmpeg -i {} -qscale:a 0 {.}.mp3 ::: ./*.flac # convert flac to mp3
 
+# move flac to flac dir
 mkdir flac
 mv *.flac ./flac
 
+# move mp3 to mp3 dir
 mkdir mp3
 mv *.mp3 ./mp3
 
