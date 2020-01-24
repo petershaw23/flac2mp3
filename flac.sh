@@ -28,4 +28,4 @@ rm *.txt
 rm *.html
 
 # add flac folder to zip file
-7z a flac.7z flac\
+7z a flac.zip flac\
