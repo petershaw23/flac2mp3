@@ -12,3 +12,5 @@ mv *.jpg ./info
 mv *.png ./info
 rm *.txt
 rm *.nfo
+
+7z a flac.7z \flac\*
