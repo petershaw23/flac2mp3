@@ -8,7 +8,7 @@ mv *.flac ./flac
 
 mkdir mp3
 mv *.mp3 ./mp3
-mv *.m3u ./mp3
+
 
 # move meta files to info folder
 mkdir info
@@ -18,6 +18,7 @@ mv *.png ./info
 mv *.log ./info
 
 # delete unwanted stuff
+rm *.m3u
 rm *.cue
 rm *.url
 rm *.nfo
