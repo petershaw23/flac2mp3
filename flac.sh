@@ -13,7 +13,9 @@ mv *.mp3 ./mp3
 # move meta files to info folder
 mkdir info
 mv *.jpg ./info
-mv *.pnf ./info
+mv *.jpeg ./info
+mv *.tiff ./info
+mv *.tif ./info
 mv *.png ./info
 
 
