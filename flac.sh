@@ -17,6 +17,8 @@ mv *.jpeg ./info
 mv *.tiff ./info
 mv *.tif ./info
 mv *.png ./info
+mv *.nfo ./info
+mv *.txt ./info
 
 
 # delete unwanted stuff
@@ -24,8 +26,6 @@ rm *.m3u
 rm *.cue
 rm *.pls
 rm *.url
-rm *.nfo
-rm *.txt
 rm *.html
 rm *.htm
 mv *.log
